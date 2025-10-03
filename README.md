@@ -51,8 +51,7 @@ Actual \ Predicted 0 (Healthy) 1 (Retinopathy)
 - Scikit-learn
 - Pandas
 
-## Installation & Usage
-```bash
+## Installation and Usage
 # Clone repository
 git clone https://github.com/your-username/retinopathy-detection.git
 cd retinopathy-detection
