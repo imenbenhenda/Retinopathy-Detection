@@ -17,9 +17,9 @@ This project implements a deep learning pipeline to detect diabetic retinopathy 
     - **Class 0 (Healthy):** Original score 0
     - **Class 1 (Diseased):** Original scores 1, 2, 3, or 4
 - **Preprocessing:**
-    - Resized to **224×224** pixels (for ResNet50)
-    - Pixel normalization (mean/std for ImageNet)
-    - Data augmentation applied to the training set (RandomHorizontalFlip, RandomRotation)
+    - Resized to **224×224** pixels 
+    - Pixel normalization 
+    - Data augmentation applied to the training set 
 
 ---
 
@@ -53,6 +53,7 @@ After running the full training pipeline, the best model (saved by `EarlyStoppin
 | **Macro Avg F1-score** | **0.9741** |
 | **Macro Avg Precision** | **0.9740** |
 | **Macro Avg Recall** | **0.9743** |
+
 ### A Note on Performance and Project Evolution
 
 Initial project explorations achieved peak, non-reproducible scores as high as **~99.3% accuracy**. A deeper analysis revealed two key methodological issues:
@@ -73,29 +74,30 @@ The final, reproducible score of **97.41% Accuracy** is therefore the honest and
 - Python
 - PyTorch
 - Pandas & NumPy
-- Scikit-learn (for metrics and reporting)
-- Matplotlib & Seaborn (for plotting)
-- PIL (Pillow)
+- Scikit-learn 
+- Matplotlib and Seaborn 
+- PIL 
 
 ---
 
 ## 📁 Project Structure
 ```
 Retinopathy-Detection/
-├── .gitignore # Ignores large files (datasets, models) 
-├── data/ # (Not tracked by Git) Dataset folder 
+├── .gitignore 
+├── data/ # (Not tracked by Git) 
 │ ├── train.csv 
 │ └── train_images/ 
-├── models/ # (Not tracked by Git) Saved models, history, and plots 
+├── models/ # (Not tracked by Git)  
 │ ├── resnet50_best_checkpoint.pth 
 │ ├── training_history.png 
 │ └── confusion_matrix.png 
-├── notebooks/ # Jupyter notebooks for data exploration 
-│ └── exploration.ipynb ├── src/ # Main source code 
-│ ├── train.py # Script to train the model 
-│ └── evaluate.py # Script to evaluate the best model 
-├── requirements.txt # Python dependencies 
-└── README.md # Project documentation
+├── notebooks/
+│ └── exploration.ipynb
+├── src/
+│ ├── train.py 
+│ └── evaluate.py 
+├── requirements.txt 
+└── README.md 
 ```
 ---
 
