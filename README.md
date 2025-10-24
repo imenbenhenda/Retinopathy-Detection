@@ -87,8 +87,8 @@ Retinopathy-Detection/
 ├── data/ # (Not tracked by Git) 
 │ ├── train.csv 
 │ └── train_images/ 
-├── models/ # (Not tracked by Git)  
-│ ├── resnet50_best_checkpoint.pth 
+├── models/   
+│ ├── resnet50_best_checkpoint.pth /# (Not tracked by Git)
 │ ├── training_history.png 
 │ └── confusion_matrix.png 
 ├── notebooks/
